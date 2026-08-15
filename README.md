@@ -228,28 +228,26 @@ Large changes suggest that the summarizer may be responding to demographic termi
 
 ---
 
-# Inclusion Bias Score
+## Inclusion Bias Score
 
 The project uses the **Inclusion Bias Score (IBS)** introduced in EquiSumm.
 
-$$
+```math
 \mathrm{IBS} =
-\frac{\sum_j freq(f_j)}
-{\sum_i freq(m_i) + \sum_j freq(f_j)}
+\frac{\sum_{j} \mathrm{freq}(f_j)}
+{\sum_{i} \mathrm{freq}(m_i) + \sum_{j} \mathrm{freq}(f_j)}
 -
-\frac{\sum_i freq(m_i)}
-{\sum_i freq(m_i) + \sum_j freq(f_j)}
-$$
+\frac{\sum_{i} \mathrm{freq}(m_i)}
+{\sum_{i} \mathrm{freq}(m_i) + \sum_{j} \mathrm{freq}(f_j)}
+```
 
 where:
 
-- $freq(m_i)$ = frequency of male-associated terms
-- $freq(f_j)$ = frequency of female-associated terms
-where:
-
-- \(freq(m_i)\) = frequency of male-associated terms
-- \(freq(f_j)\) = frequency of female-associated terms
-
+- $\mathrm{freq}(m_i)$ = frequency of male-associated terms
+- $\mathrm{freq}(f_j)$ = frequency of female-associated terms
+- $\mathrm{IBS} \approx 0$ indicates balanced representation
+- $\mathrm{IBS} > 0$ indicates higher female-associated representation
+- $\mathrm{IBS} < 0$ indicates higher male-associated representation
 ### Interpretation
 
 | IBS | Interpretation |
