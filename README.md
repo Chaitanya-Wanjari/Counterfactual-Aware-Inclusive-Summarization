@@ -53,7 +53,7 @@ The evaluation uses 481 cleaned `#MeToo` social-media posts and three counterfac
 
 The following figure summarizes the Inclusion Bias Score comparison.
 
-![Inclusion Bias Comparison](assets/graph cfc.jpeg)
+![Inclusion Bias Comparison](assets/graph_cfc.jpeg)
 
 **Interpretation:** Scores closer to zero indicate more balanced representation. Standard LexRank exhibits large changes across counterfactual transformations, while the EquiSumm-based gender-aware pipeline remains closer to zero for the evaluated rule-based and Word2Vec variants.
 
