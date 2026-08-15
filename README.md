@@ -1,5 +1,5 @@
-# Counterfactual Evaluation and Mitigation of
-Gender Bias in Tweet Summarization
+# Counterfactual Evaluation and Mitigation of Gender Bias in Tweet Summarization
+
 
 This repository contains the research artifacts for **Counterfactual-Aware Inclusive Summarization**, a study of demographic sensitivity and gender-related inclusion bias in extractive social-media summarization.
 
