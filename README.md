@@ -53,7 +53,7 @@ The evaluation uses 481 cleaned `#MeToo` social-media posts and three counterfac
 
 The following figure summarizes the Inclusion Bias Score comparison.
 
-![Inclusion Bias Comparison](assets/graph cfc.png)
+![Inclusion Bias Comparison](assets/graph cfc.jpeg)
 
 **Interpretation:** Scores closer to zero indicate more balanced representation. Standard LexRank exhibits large changes across counterfactual transformations, while the EquiSumm-based gender-aware pipeline remains closer to zero for the evaluated rule-based and Word2Vec variants.
 
@@ -394,40 +394,6 @@ flowchart TB
     E1 --> E2
     E2 --> E3
 ```
-
----
-
-# Project Structure
-
-A recommended repository structure is:
-
-```text
-.
-├── README.md
-├── data/
-│   ├── README.md
-│   └── ...
-├── src/
-│   ├── preprocessing/
-│   ├── counterfactual/
-│   ├── gender_classification/
-│   ├── summarization/
-│   └── evaluation/
-├── notebooks/
-│   └── ...
-├── results/
-│   ├── tables/
-│   └── figures/
-├── assets/
-│   └── inclusion_bias_comparison.png
-├── paper/
-│   └── paper.pdf
-└── requirements.txt
-```
-
-The exact directory structure should be updated to match the implementation in the repository.
-
----
 
 # Reproducibility
 
